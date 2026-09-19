@@ -4,9 +4,9 @@ A chess web app built with React and Redux Toolkit. Player 1 plays White against
 
 ## Demo
 
-[Watch gameplay demo](demo/demo.mp4)
+<a href="https://drive.google.com/file/d/1seKbXcjixpkGxTmlsX0wfUvnZADMAU2h/view?usp=sharing"><img src="demo/demo.gif" width="600" alt="Watch gameplay demo on Google Drive" /></a>
 
-<video src="demo/demo.mp4" controls="controls" width="600" height="auto"></video>
+[Watch full demo video on Google Drive](https://drive.google.com/file/d/1seKbXcjixpkGxTmlsX0wfUvnZADMAU2h/view?usp=sharing)
 
 ## How It Works
 
