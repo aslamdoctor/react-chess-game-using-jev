@@ -24,8 +24,8 @@ You need [Bun](https://bun.sh) installed on your machine.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/szabolcsthedeveloper/React-Chess.git
-   cd React-Chess
+   git clone https://github.com/aslamdoctor/react-chess-game-using-jev.git
+   cd react-chess-game-using-jev
    ```
 
 2. Install dependencies:
