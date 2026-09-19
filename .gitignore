@@ -13,10 +13,16 @@
 
 # misc
 .DS_Store
+
+# environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# large raw screen recordings
+demo/*.mov
 
 npm-debug.log*
 yarn-debug.log*

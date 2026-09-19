@@ -1,56 +1,56 @@
-# React Chess Game
+# React Chess with Jev AI Advisor
 
-Welcome to the React Chess Game repository! This chess game is a modern, responsive web application built using React and TypeScript. Aimed at providing a seamless chess-playing experience, it's perfect for both beginners and seasoned players who want to enjoy a game of chess on-the-go or from the comfort of their browser.
-
-![React Chess Game Preview](https://i.imgur.com/9aAIZKX.png)
+A chess web app built with React and Redux Toolkit. Player 1 plays White against a computer opponent on Black. On White's turn, an AI advisor evaluates legal moves using TypeSafe's Jev model and displays decision stats in a side panel.
 
 ## Demo
 
-Experience the live demo: [Play Chess Now](https://chess-game-react.netlify.app/)
+[Watch gameplay demo](demo/demo.mp4)
 
-## Features
+<video src="demo/demo.mp4" controls="controls" width="600" height="auto"></video>
 
-- **Play Chess**: Challenge yourself with a game of chess, optimized for all levels.
-- **Modern UI**: A clean and intuitive interface ensuring a delightful experience.
-- **Responsive Design**: Enjoy the game on any device, desktop, tablet, or mobile.
-- **TypeScript**: Strongly typed to enhance code quality and understandability.
+## How It Works
+
+- Player 1 (White): Human player move selection, with suggestions from the Jev advisor.
+- Player 2 (Black): Automated computer opponent that evaluates board moves.
+- Advisor panel: Displays the recommended move, decision confidence, candidate move probability distribution, material balance, and API response time.
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
-Before you begin, ensure you have the latest version of `npm` installed on your machine. To install `npm`, run this command:
-
-npm install npm@latest -g
+You need [Bun](https://bun.sh) installed on your machine.
 
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/szabolcsthedeveloper/React-Chess
+   ```bash
+   git clone https://github.com/szabolcsthedeveloper/React-Chess.git
+   cd React-Chess
+   ```
 
-2. Navigate to the project directory:
-cd react-chess-game
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
 
-3. Install the project dependencies:
-npm install
+3. Set up environment variables:
+   Create a `.env` file in the project root:
+   ```bash
+   REACT_APP_TYPESAFE_API_KEY=your_typesafe_api_key_here
+   ```
 
-4. Start the development server:
-npm start
+### Running the App
 
-This will run the app in the development mode. Open http://localhost:3000 to view it in your browser.
+Start the development server:
+```bash
+bun start
+```
 
-## Usage
+Open `http://localhost:3000` in your browser.
 
-To play the game, simply start a new game and move the pieces by clicking on them and then clicking on the target square. The game will enforce legal moves and provide a visual indicator of possible moves.
+### Running Tests
 
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
-3. Commit your Changes (git commit -m 'Add some AmazingFeature')
-4. Push to the Branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
+Run test suites using Bun:
+```bash
+bun test
+```
