@@ -54,3 +54,8 @@ Run test suites using Bun:
 ```bash
 bun test
 ```
+
+## Credits
+
+This project builds on the React chess game implementation by [Simran Lotey](https://github.com/simranlotey/react-chess-game).
+
